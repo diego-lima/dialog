@@ -1,0 +1,36 @@
+{% load static %}
+<html>
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Hello, world!</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="{% static "assets/css/bootstrap.min.css" %}" rel="stylesheet" type="text/css" />
+
+
+        {% block extracss %}
+        {% endblock %}
+    </head>
+
+
+    <body>
+
+        {% block content %}
+        {% endblock %}
+
+    </body>
+
+    <!-- Variáveis  -->
+    <script src="{% static "assets/js/env.js" %}"></script>
+    <!-- Funções utilitárias  -->
+    <script src="{% static "assets/js/utils.js" %}"></script>
+    <!-- JS compilado -->
+    <script src="{% static "assets/js/bundles/app.js" %}"></script>
+
+    {% block extrajs %}
+    {% endblock %}
+</html>

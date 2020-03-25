@@ -1,0 +1,4 @@
+- checar validade do uuid
+- fazer histórico de mensagens e verificar idade
+- criar usuário e tela do orientador
+- criar pool de orientandos
